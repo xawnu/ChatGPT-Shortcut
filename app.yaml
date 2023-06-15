@@ -1,0 +1,17 @@
+name: sample-node
+region: nyc
+services:
+- environment_slug: node-js
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: sample-node
+  http_port: 3000
+  name: sample-node
+  routes:
+  - path: /
+  run_command: npm start
+  envs:
+  - key: NODE_VERSION
+    value: 18.0.0
+    scope: RUN_AND_BUILD_TIME
