@@ -13,5 +13,5 @@ services:
   run_command: npm start
   envs:
   - key: NODE_VERSION
-    value: 18.0.0
+    value: 16.10.0
     scope: RUN_AND_BUILD_TIME
